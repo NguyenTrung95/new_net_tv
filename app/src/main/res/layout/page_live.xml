@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/live_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+        <LinearLayout
+            android:id="@+id/li_live_list_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="920dp"
+            android:background="@drawable/live_list_back"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_list_logo_icon"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="35dp" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/channellist"
+                style="@style/focus_item"
+
+                android:paddingTop="40dp"
+                android:paddingBottom="106dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:tag="1"
+
+                android:scrollbars="none"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:divider="@color/transparent"
+                android:background="@color/transparent"
+                tools:listitem="@layout/livelist"
+                />
+<!--            <ListView-->
+<!--                android:id="@+id/channellist"-->
+<!--                style="@style/CustomListViewStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:paddingTop="40dp"-->
+<!--                android:paddingBottom="106dp" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/program_information_layout"
+            android:layout_width="880dp"
+            android:layout_height="108dp"
+            android:layout_marginLeft="400dp"
+            android:layout_marginTop="550dp"
+            android:background="@drawable/live_info"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="117dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_live_quality"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:paddingLeft="35dp"
+                    android:paddingTop="18dp"
+                    android:paddingRight="29dp"
+                    android:paddingBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/tv_live_curtime"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_below="@+id/iv_live_quality"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/program_info"
+                    android:layout_width="510dp"
+                    android:layout_height="54dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+
+                <TextView
+                    android:id="@+id/program_date"
+                    android:layout_width="155dp"
+                    android:layout_height="54dp"
+                    android:layout_below="@+id/program_info"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/program_time"
+                    android:layout_width="135dp"
+                    android:layout_height="54dp"
+                    android:layout_below="@+id/program_info"
+                    android:layout_toRightOf="@+id/program_date"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/program_info">
+
+                    <ImageView
+                        android:id="@+id/program_channel_icon"
+                        android:layout_width="85dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="15dp"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/tv_live_programnum"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="132dp"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/program_chinnal_name"
+                    android:layout_width="420dp"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="305dp"
+                    android:layout_marginTop="62dp"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/ad_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgt0"
+                android:layout_width="match_parent"
+                android:layout_height="480dp"
+                android:layout_marginLeft="402dp"
+                android:layout_marginTop="70dp"
+                android:focusable="false"
+                android:scaleType="fitXY"
+                android:src="@drawable/page_live_default_bg" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/iv_live_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="370dp"
+            android:layout_marginTop="350dp"
+            android:src="@drawable/arrow" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/arrow"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/valid_day_begin"
+                android:textColor="@color/grey51"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tv_valid_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:gravity="center_vertical"
+                android:text="@string/valid_day_mid"
+                android:textColor="@color/yellow"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/valid_day_end"
+                android:textColor="@color/grey51"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="3dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/tips" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/loading_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

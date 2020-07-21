@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: org.codehaus.jackson:jackson-smile:1.9.13@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-smile/1.9.13/e315855866c552f9d70f653e3ccec7c4d82fa210/jackson-smile-1.9.13.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-smile/1.9.13/40e3d9963a3b214403546ab461b69dd19c3e4977/jackson-smile-1.9.13-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-smile/1.9.13/2eba228cdf912bbf798e31f6fa110d7cf8ff7721/jackson-smile-1.9.13-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

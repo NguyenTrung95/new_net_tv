@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/vodframe_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/download_frame">
+
+        <ImageView
+            android:id="@+id/vodframe_show_icon"
+            android:layout_width="480dp"
+            android:layout_height="260dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="90dp" />
+
+        <LinearLayout
+            android:id="@+id/layout_vodframe_pge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="503dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="106dp"
+                android:layout_marginTop="60dp">
+
+                <TextView
+                    android:id="@+id/tv_vodframe_filename"
+                    android:layout_width="450dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="27sp" />
+
+                <TextView
+                    android:id="@+id/tv_vodframe_date"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_vodframe_filename"
+                    android:layout_alignLeft="@+id/tv_vodframe_filename"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/tv_vodframe_time"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tv_vodframe_date"
+                    android:layout_toRightOf="@+id/tv_vodframe_date"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/iv_vodframe_icon"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_alignTop="@+id/tv_vodframe_filename"
+                    android:layout_toRightOf="@+id/tv_vodframe_filename"
+                    android:background="@drawable/icon_t" />
+
+                <TextView
+                    android:id="@+id/tv_vodframe_index"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/iv_vodframe_icon"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/iv_vodframe_icon"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/tv_vodframe_name"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_vodframe_icon"
+                    android:layout_alignRight="@+id/tv_vodframe_index"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/tv_vodframe_time"
+                    android:ellipsize="none"
+                    android:gravity="right|center_vertical|center_horizontal|center"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="607dp"
+                android:layout_height="318dp"
+                android:layout_marginLeft="70dp">
+
+                <ScrollView
+                    android:id="@+id/sv_vodframe"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none">
+
+                    <TextView
+                        android:id="@+id/tv_vodframe_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:lineSpacingMultiplier="1.2"
+                        android:maxLines="10000"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="15dp"
+                        android:paddingRight="40dp"
+                        android:paddingBottom="60dp"
+                        android:singleLine="false"
+                        android:textColor="@color/white"
+                        android:textSize="25sp" />
+                </ScrollView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="338dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/pzqb_track_bg" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/vodframe_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="260dp"
+                    android:background="@drawable/btn_play_sel" />
+
+                <Button
+                    android:id="@+id/vodframe_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:layout_toRightOf="@+id/vodframe_play"
+                    android:background="@drawable/btn_back_sel" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

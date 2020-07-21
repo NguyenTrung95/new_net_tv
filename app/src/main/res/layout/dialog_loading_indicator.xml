@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/dialog_loading_indicator_image_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/loading_indicator"/>
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/page_loading"/>
 
 </LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@drawable/email_horizontal_2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/flag"
+            android:layout_width="@dimen/dp_28"
+            android:layout_height="@dimen/dp_23"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:focusable="false"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/mail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_23" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10">
+
+        <TextView
+            android:id="@+id/mail_content"
+            android:layout_width="@dimen/dp_300"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:singleLine="true"
+            android:text="content"
+            android:textColor="#999999"
+            android:textSize="@dimen/sp_18" />
+
+        <TextView
+            android:id="@+id/date_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="2018-01-01"
+            android:textColor="#999999"
+            android:textSize="@dimen/sp_18" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@drawable/email_horizontal_2" />
+</LinearLayout>

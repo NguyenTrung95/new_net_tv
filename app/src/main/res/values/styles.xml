@@ -1,4 +1,4 @@
-<resources>
+<resources  xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
@@ -20,5 +20,160 @@
         <item name="textAllCaps">false</item>
         <item name="android:textColor">@color/blue_1</item>
     </style>
+    <style name="Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/noAnimation</item>
+    </style>
 
+    <style name="noAnimation">
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+    <style name="CustomDialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">adjustUnspecified|stateVisible|adjustResize</item>
+    </style>
+
+    <style name="CustomProgressDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="PromptDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="CustomListViewStyle">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:drawSelectorOnTop">false</item>
+        <item name="android:cacheColorHint">#00000000</item>
+    </style>
+
+    <style name="CustomListViewStyle2">
+        <item name="android:background">#00000000</item>
+        <item name="android:paddingLeft">@dimen/_1sdp</item>
+        <item name="android:paddingRight">@dimen/_1sdp</item>
+        <!--
+                <item name="android:listSelector">@drawable/focus_down1</item>
+        -->
+        <item name="android:listSelector">@color/yellow</item>
+        <item name="android:drawSelectorOnTop">false</item>
+        <item name="android:cacheColorHint">#00000000</item>
+    </style>
+
+    <style name="CustomListViewStyle3">
+        <item name="android:background">#00000000</item>
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:listSelector">@drawable/hov</item>
+        <item name="android:drawSelectorOnTop">false</item>
+        <item name="android:cacheColorHint">#00000000</item>
+    </style>
+
+    <style name="CustomListViewStyle4">
+        <item name="android:background">#00000000</item>
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:listSelector">@drawable/focus_down1</item>
+        <item name="android:drawSelectorOnTop">false</item>
+        <item name="android:cacheColorHint">#00000000</item>
+    </style>
+
+    <style name="TextView_base">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="button_padding">
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+    </style>
+
+    <style name="ProgressHintBase">
+        <item name="android:focusable">false</item>
+        <item name="android:thumb">@drawable/bg_progress_hint_popup</item>
+        <item name="android:thumbOffset">16dp</item>
+    </style>
+
+    <style name="ProgressHint">
+        <item name="popupLayout">@layout/progress_hint_popup</item>
+        <item name="popupOffset">0dp</item>
+        <item name="popupStyle">@null</item>
+        <item name="popupAnimationStyle">@style/ProgressHintPopupAnimation</item>
+        <item name="popupAlwaysShown">false</item>
+        <item name="popupDraggable">false</item>
+    </style>
+
+    <style name="ProgressHintPopupAnimation">
+        <item name="android:windowEnterAnimation">@anim/progress_hint_popup_show</item>
+        <item name="android:windowExitAnimation">@anim/progress_hint_popup_hide</item>
+    </style>
+
+    <style name="AdChannelColorIconTheme">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">35dp</item>
+    </style>
+
+    <style name="image_style">
+        <item name="android:background">@drawable/radio_select_channel_image</item>
+        <item name="android:layout_width">123dp</item>
+        <item name="android:layout_height">104dp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="dialog2">
+        <item name="android:backgroundDimAmount">0.8</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="translucent">
+        <item name="android:windowBackground">@color/translucent_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+    <style name="Widget.MaterialProgressBar.ProgressBar.Horizontal" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateDrawable">@null</item>
+        <item name="android:minHeight">3dp</item>
+        <item name="android:maxHeight">3dp</item>
+    </style>
+
+    <style name="TextFieldBoxes">
+        <item name="android:colorControlHighlight" tools:targetApi="lollipop">#2a4b5c</item>
+    </style>
+
+    <style name="focus_item">
+        <item name="android:background">@drawable/radio_select_channel_image</item>
+
+    </style>
 </resources>

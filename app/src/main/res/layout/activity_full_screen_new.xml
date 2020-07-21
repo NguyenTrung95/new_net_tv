@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        android:id="@+id/rlVideoPlayer"
+        android:background="@android:color/black"
+        android:gravity="center_vertical|center_horizontal"
+        >
+    <LinearLayout
+        android:id="@+id/info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/live_channelinfo_down"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="163dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_play_quality"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="23dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tv_play_curtime"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/iv_play_quality"
+                android:gravity="center_horizontal"
+                android:textColor="@color/grey51"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/nwsname"
+                android:layout_width="670dp"
+                android:layout_height="54dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="50dp"
+                android:paddingTop="15dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/date_ts"
+                android:layout_width="185dp"
+                android:layout_height="54dp"
+                android:layout_below="@+id/nwsname"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/time_ts"
+                android:layout_width="185dp"
+                android:layout_height="54dp"
+                android:layout_below="@+id/nwsname"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/date_ts"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/nwsname">
+
+                <ImageView
+                    android:id="@+id/chanicon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="22dp"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/channum"
+                    android:layout_width="78dp"
+                    android:layout_height="43dp"
+                    android:layout_marginLeft="282dp"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/flmname"
+                android:layout_width="540dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="520dp"
+                android:layout_marginTop="62dp"
+                android:gravity="right|center_vertical|center_horizontal|center"
+                android:paddingTop="2dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.google.android.exoplayer2.ui.VideoPlayerView
+            android:id="@+id/videoPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:use_controller="true"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp"/>
+
+    <include layout="@layout/layout_media_controller_new"/>
+    <LinearLayout
+        android:id="@+id/li_live_list_layout"
+        android:layout_width="@dimen/_190sdp"
+        android:layout_height="match_parent"
+        android:background="@drawable/live_list_back"
+        android:orientation="vertical">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mLiveListView"
+            style="@style/focus_item"
+
+            android:paddingTop="40dp"
+            android:paddingBottom="106dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:tag="1"
+
+            android:scrollbars="none"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:divider="@color/transparent"
+            android:background="@color/transparent"
+            tools:listitem="@layout/livelist"
+            />
+
+    </LinearLayout>
+    <com.comix.overwatch.HiveProgressView
+            android:id="@+id/loadingView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            app:hive_animDuration="5000"
+            app:hive_color="@color/colorAccent"
+            app:hive_maxAlpha="255"
+            app:hive_cornerRadius="2"
+            app:hive_shrink="true"
+            android:visibility="gone"/>
+
+</FrameLayout>

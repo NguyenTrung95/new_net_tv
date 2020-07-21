@@ -19,21 +19,21 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
-#-keep class com.nencer.nencerwallet.service.payment.response.HistoryResponse
-#-keep class com.nencer.nencerwallet.service.payment.response.HistoryOrder
-#-keep class com.nencer.nencerwallet.service.payment.response.Info
+#-keep class com.eliving.tv.service.payment.response.HistoryResponse
+#-keep class com.eliving.tv.service.payment.response.HistoryOrder
+#-keep class com.eliving.tv.service.payment.response.Info
 #
-#-keep class com.nencer.nencerwallet.service.payment.response.PaymentResponse
-#-keep class com.nencer.nencerwallet.service.payment.response.CardList
-#-keep class com.nencer.nencerwallet.service.payment.response.Card
-#-keep class com.nencer.nencerwallet.ui.OrderData
-#-keep class com.nencer.nencerwallet.ui.CardInfo
+#-keep class com.eliving.tv.service.payment.response.PaymentResponse
+#-keep class com.eliving.tv.service.payment.response.CardList
+#-keep class com.eliving.tv.service.payment.response.Card
+#-keep class com.eliving.tv.ui.OrderData
+#-keep class com.eliving.tv.ui.CardInfo
 #
-#-keep com.nencer.nencerwallet.service.wallet.response.HistoryDepositResponse
-#-keep com.nencer.nencerwallet.service.wallet.response.HistoryInfo
-#-keep com.nencer.nencerwallet.service.wallet.response.BankInfo
-#-keep com.nencer.nencerwallet.service.wallet.response.PayerInfo
-#-keep com.nencer.nencerwallet.service.wallet.response.PayeeInfo
+#-keep com.eliving.tv.service.wallet.response.HistoryDepositResponse
+#-keep com.eliving.tv.service.wallet.response.HistoryInfo
+#-keep com.eliving.tv.service.wallet.response.BankInfo
+#-keep com.eliving.tv.service.wallet.response.PayerInfo
+#-keep com.eliving.tv.service.wallet.response.PayeeInfo
 #-keep om.nencer.nencerwallet.service.exchange.response.HistoryChargingResponse
 #-keep om.nencer.nencerwallet.service.exchange.response.HistoryChargingInfo
 
@@ -48,10 +48,10 @@
 
 # Application classes that will be serialized/deserialized over Gson
 -keep class om.nencer.nencerwallet.service.wallet.response.** { <fields>; }
--keep class com.nencer.nencerwallet.service.payment.response.** { <fields>; }
--keep class com.nencer.nencerwallet.service.exchange.response..** { <fields>; }
--keep class com.nencer.nencerwallet.ui.** { <fields>; }
--keep class com.nencer.nencerwallet.service.info.model.** { <fields>; }
+-keep class com.eliving.tv.service.payment.response.** { <fields>; }
+-keep class com.eliving.tv.service.exchange.response..** { <fields>; }
+-keep class com.eliving.tv.ui.** { <fields>; }
+-keep class com.eliving.tv.service.info.model.** { <fields>; }
 
 
 # Prevent proguard from stripping interface information from TypeAdapter, TypeAdapterFactory,

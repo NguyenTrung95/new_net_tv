@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal">
+
+        <RelativeLayout
+            android:id="@+id/ll_catchup"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:tag="vod">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/tv_week_download" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_epg"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_below="@+id/ll_catchup"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:tag="live">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/tv_program" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_dowload"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_below="@+id/ll_epg"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusDown="@+id/tv_item"
+            android:tag="record">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/tv_downloadlist" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_radio"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_below="@+id/ad1"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_toEndOf="@+id/ll_dowload"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusDown="@+id/tv_item"
+            android:tag="app1">
+
+            <include
+                layout="@layout/shotcut_favourite1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tv_5"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_below="@+id/ad1"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_toStartOf="@+id/rl_ads"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusDown="@+id/tv_item"
+            android:tag="app2">
+
+            <include
+                layout="@layout/shotcut_favourite2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ad1"
+            android:layout_width="@dimen/_143sdp"
+            android:layout_height="@dimen/_143sdp"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_toEndOf="@+id/ll_catchup"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:tag="ad1">
+
+            <ImageView
+                android:id="@+id/iv_tv_ad1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/tv"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_ads"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_216sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_toEndOf="@+id/ad1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusDown="@+id/tv_item"
+            android:tag="rl_ads">
+
+            <ImageView
+                android:id="@+id/iv_tv_rl_ads"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ad_2"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

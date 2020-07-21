@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="30dp"
+    android:layout_height="20dp"
+    android:background="@drawable/revire_time_tip_new">
+
+    <TextView
+        android:id="@android:id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:padding="7dp"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+</FrameLayout>

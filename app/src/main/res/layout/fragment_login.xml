@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarStyle="outsideOverlay">
+
+
+    <LinearLayout
+        android:id="@+id/ll_login"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/_130sdp"
+        android:layout_marginRight="@dimen/_130sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/_20sdp">
+
+
+        <com.eliving.tv.customview.textfieldboxes.TextFieldBoxes
+            android:id="@+id/text_field_boxes1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:endIcon="@drawable/ic_user"
+            app:labelText="User name"
+            app:maxCharacters="50">
+
+            <com.eliving.tv.customview.textfieldboxes.ExtendedEditText
+                android:id="@+id/edt_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                />
+
+        </com.eliving.tv.customview.textfieldboxes.TextFieldBoxes>
+
+
+        <com.eliving.tv.customview.textfieldboxes.TextFieldBoxes
+            android:id="@+id/text_field_boxes5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:endIcon="@drawable/ic_password"
+            android:animateLayoutChanges="true"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            app:maxCharacters="50"
+            app:labelText="Password">
+
+            <com.eliving.tv.customview.textfieldboxes.ExtendedEditText
+                android:id="@+id/edt_password"
+                android:layout_width="match_parent"
+                android:focusable="true"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:hint="Nhập mật " />
+        </com.eliving.tv.customview.textfieldboxes.TextFieldBoxes>
+
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_28sdp"
+            android:background="@drawable/item_selecto_button"
+            android:textColor="@color/white"
+            android:focusable="true"
+            android:textSize="@dimen/_11sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textAllCaps="false"
+            android:text="Đăng nhập" />
+
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_28sdp"
+            android:background="@drawable/item_selecto_button"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp"
+            android:focusable="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textAllCaps="false"
+            android:text="Đăng ký " />
+
+
+    </LinearLayout>
+
+</LinearLayout>

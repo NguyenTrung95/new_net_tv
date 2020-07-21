@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/guide_bar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/app_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:id="@+id/text_tv"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="NETTV"
+                android:textColor="@color/yellow"
+                android:textSize="20dp"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/image_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/text_tv"
+                android:layout_centerInParent="true"
+                android:focusable="true"
+                android:src="@drawable/tv_icon"
+                android:tag="nettv" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:id="@+id/text_radio"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="RADIO"
+                android:textColor="@color/yellow"
+                android:textSize="20dp"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/image_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/text_radio"
+                android:layout_centerInParent="true"
+                android:focusable="true"
+                android:src="@drawable/radio_icon"
+                android:tag="radio" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:id="@+id/text_news"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="NEWS"
+                android:textColor="@color/yellow"
+                android:textSize="20dp"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/image_news"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/text_news"
+                android:layout_centerInParent="true"
+                android:focusable="true"
+                android:src="@drawable/news_icon"
+                android:tag="news" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:id="@+id/text_media"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="MEDIA"
+                android:textColor="@color/yellow"
+                android:textSize="20dp"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/image_media"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/text_media"
+                android:layout_centerInParent="true"
+                android:focusable="true"
+                android:src="@drawable/media_icon"
+                android:tag="media" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:id="@+id/text_setting"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="SETTING"
+                android:textColor="@color/yellow"
+                android:textSize="20dp"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/image_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/text_setting"
+                android:layout_centerInParent="true"
+                android:focusable="true"
+                android:src="@drawable/setting_icon"
+                android:tag="setting" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/info_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="900dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/service"
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="80dp"
+            android:focusable="true"
+            android:tag="service">
+
+            <ImageView
+                android:id="@+id/image_service"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/service_unchecked" />
+
+            <ImageView
+                android:id="@+id/image_service_check"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/service_checked"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mail"
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+            android:focusable="true"
+            android:tag="mail">
+
+            <ImageView
+                android:id="@+id/image_mail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/mail_unchecked" />
+
+            <ImageView
+                android:id="@+id/image_mail_check"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/mail_checked"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/info"
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+            android:focusable="true"
+            android:tag="info">
+
+            <ImageView
+                android:id="@+id/image_info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/info_unchecked" />
+
+            <ImageView
+                android:id="@+id/image_info_check"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/info_checked"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

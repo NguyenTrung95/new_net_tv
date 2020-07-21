@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_play_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/surface_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <SurfaceView
+                android:id="@+id/surface"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <FrameLayout
+                android:id="@+id/buffer_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/ad"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/iv_dialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/progress_round" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_review_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/review_pause"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/tracks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1010dp"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/left_channel"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/info_layout"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/live_channelinfo_down"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="163dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_play_quality"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="23dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/tv_play_curtime"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/iv_play_quality"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/grey51"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/nwsname"
+                    android:layout_width="670dp"
+                    android:layout_height="54dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="50dp"
+                    android:paddingTop="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/date_ts"
+                    android:layout_width="185dp"
+                    android:layout_height="54dp"
+                    android:layout_below="@+id/nwsname"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/time_ts"
+                    android:layout_width="185dp"
+                    android:layout_height="54dp"
+                    android:layout_below="@+id/nwsname"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/date_ts"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/nwsname">
+
+                    <ImageView
+                        android:id="@+id/chanicon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="180dp"
+                        android:layout_marginTop="22dp"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/channum"
+                        android:layout_width="78dp"
+                        android:layout_height="43dp"
+                        android:layout_marginLeft="282dp"
+                        android:layout_marginTop="18dp"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/flmname"
+                    android:layout_width="540dp"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="520dp"
+                    android:layout_marginTop="62dp"
+                    android:gravity="right|center_vertical|center_horizontal|center"
+                    android:paddingTop="2dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/play"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/review_back"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="-6dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <net.sunniwell.app.linktaro.nettv.view.HorizontalSeekBar
+                    android:id="@+id/tsb_seek"
+                    style="@style/ProgressHint"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/progress_style2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:text="@string/total_time"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/flname"
+                    android:layout_width="500dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="200dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <ImageView
+                    android:id="@+id/iv_page_quality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="195dp"
+                    android:paddingLeft="35dp"
+                    android:paddingRight="29dp"
+                    android:src="@drawable/sd" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/total_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/nwname"
+                    android:layout_width="500dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="200dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/tv_now_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

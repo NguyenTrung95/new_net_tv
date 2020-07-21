@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_42sdp"
+    android:background="@drawable/item_selector"
+    android:focusable="true"
+    android:layout_height="@dimen/_42sdp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imv_radio"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/radio_icon"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_radio_name"
+        android:layout_width="match_parent"
+        android:text="Zone FM"
+        android:layout_gravity="center"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColor="@color/grey_1"
+        android:textStyle="bold"
+        android:ellipsize="end"
+        android:textSize="@dimen/_8sdp"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,9 +1,9 @@
 # cardapk
 Android Card Docs
 ### [API Link](https://documenter.getpostman.com/view/5740908/SVmvTJwv?version=latest#6bda9bfa-88be-4962-95f4-709f394a09f6)
-### [Web Link](https://thedientu.com)
+### [DOC Link](https://drive.google.com/open?id=1TwKsWjPLSLeTIKK3BrxN0LQOYiJTEQV5)
 
-### 1. An application that Nencer  Wallet buy card
+### 1. An application that AndroidTV  same VTVGO
 
 ### 2. Base Concepts
   #### Modern Android

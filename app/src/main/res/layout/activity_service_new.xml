@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/service_bg">
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/help"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="170dp"
+        android:text="@string/service_user"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/sid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user"
+        android:layout_alignLeft="@+id/user"
+        android:layout_marginTop="15dp"
+        android:text="@string/service_sid"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/validto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sid"
+        android:layout_alignLeft="@+id/sid"
+        android:layout_marginTop="15dp"
+        android:text="@string/service_validto"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/user_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sid"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/sid"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/sid_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/user_edit"
+        android:layout_alignBottom="@+id/sid"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/validto_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sid_edit"
+        android:layout_alignBottom="@+id/validto"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/help"
+        android:layout_width="720dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="240dp"
+        android:text="@string/help"
+        android:textSize="30sp" />
+</RelativeLayout>

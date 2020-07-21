@@ -99,4 +99,41 @@
 
     <!--Transparent-->
     <color name="transparent_1">#00000000</color>
+
+
+    <color name="blue">#5b9be0</color>
+    <color name="font">#b5b5b5</color>
+    <color name="purple">#6633ff</color>
+    <color name="yellow">#ffff00</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#00000000</color>
+    <color name="black1">#000000</color>
+    <color name="grey51">#828282</color>
+    <color name="Seashell4">#8b8682</color>
+    <color name="blue1">#104e8b</color>
+    <color name="blue2">#161b2d</color>
+    <color name="transparent">#0000</color>
+    <color name="circle1">#ffe749</color>
+    <color name="circle2">#ff9600</color>
+    <color name="circle3">#ffac30</color>
+    <color name="line">#666</color>
+    <color name="circle1_1">#9cd4ff</color>
+    <color name="circle2_2">#0077ff</color>
+    <color name="circle3_3">#3f99ff</color>
+    <color name="yellowseek">#ffcc00</color>
+    <color name="blueseek">#0099ff</color>
+    <color name="trans">#00000000</color>
+    <color name="translucent_background">#a0000000</color>
+
+    <color name="A400red">#ff1744</color>
+
+    <!--Light Theme-->
+    <color name="per54black">#72000000</color>
+    <color name="per42black">#2a000000</color>
+    <color name="per06black">#06000000</color>
+
+    <!--Dark Theme-->
+    <color name="per70white">#46ffffff</color>
+    <color name="per50white">#32ffffff</color>
+    <color name="per10white">#0affffff</color>
 </resources>

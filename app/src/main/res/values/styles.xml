@@ -1,4 +1,4 @@
-<resources  xmlns:tools="http://schemas.android.com/tools">
+<resources>
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
@@ -70,12 +70,9 @@
 
     <style name="CustomListViewStyle2">
         <item name="android:background">#00000000</item>
-        <item name="android:paddingLeft">@dimen/_1sdp</item>
-        <item name="android:paddingRight">@dimen/_1sdp</item>
-        <!--
-                <item name="android:listSelector">@drawable/focus_down1</item>
-        -->
-        <item name="android:listSelector">@color/yellow</item>
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:listSelector">@drawable/focus_down1</item>
         <item name="android:drawSelectorOnTop">false</item>
         <item name="android:cacheColorHint">#00000000</item>
     </style>
@@ -161,19 +158,5 @@
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
-    </style>
-    <style name="Widget.MaterialProgressBar.ProgressBar.Horizontal" parent="android:Widget.ProgressBar.Horizontal">
-        <item name="android:indeterminateDrawable">@null</item>
-        <item name="android:minHeight">3dp</item>
-        <item name="android:maxHeight">3dp</item>
-    </style>
-
-    <style name="TextFieldBoxes">
-        <item name="android:colorControlHighlight" tools:targetApi="lollipop">#2a4b5c</item>
-    </style>
-
-    <style name="focus_item">
-        <item name="android:background">@drawable/radio_select_channel_image</item>
-
     </style>
 </resources>

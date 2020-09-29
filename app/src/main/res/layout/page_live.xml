@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     android:focusable="true"
     android:orientation="vertical">
 
@@ -27,30 +26,14 @@
                 android:layout_height="30dp"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="35dp" />
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/channellist"
-                style="@style/focus_item"
 
-                android:paddingTop="40dp"
-                android:paddingBottom="106dp"
+            <ListView
+                android:id="@+id/channellist"
+                style="@style/CustomListViewStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:focusable="true"
-                android:tag="1"
-
-                android:scrollbars="none"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                android:divider="@color/transparent"
-                android:background="@color/transparent"
-                tools:listitem="@layout/livelist"
-                />
-<!--            <ListView-->
-<!--                android:id="@+id/channellist"-->
-<!--                style="@style/CustomListViewStyle"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:paddingTop="40dp"-->
-<!--                android:paddingBottom="106dp" />-->
+                android:paddingTop="40dp"
+                android:paddingBottom="106dp" />
         </LinearLayout>
 
         <LinearLayout

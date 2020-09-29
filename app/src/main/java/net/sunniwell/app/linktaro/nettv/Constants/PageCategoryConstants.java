@@ -1,0 +1,40 @@
+package net.sunniwell.app.linktaro.nettv.Constants;
+
+public class PageCategoryConstants {
+    public static final int CALLBACK_CHANGE_SURFACE_TO_EPG_SCREEN_SIZE = 7;
+    public static final int CALLBACK_CHANGE_SURFACE_TO_RESERVATION_HINT_SCREEN_SIZE = 8;
+    public static final int CALLBACK_CLICK_GO_FULL_PLAY_PAGE = 3;
+    public static final int CALLBACK_CLICK_GO_LIVE_PAGE = 14;
+    public static final int CALLBACK_CLICK_GO_PLAY_PAGE = 2;
+    public static final int CALLBACK_GO_BACK_PAGE = 1;
+    public static final int CALLBACK_GO_DOWN_PAGE = 6;
+    public static final int CALLBACK_GO_EPG_PAGE = 11;
+    public static final int CALLBACK_SHOW_HAVE_RESERVATION_DIALOG = 15;
+    public static final int CALLBACK_SHOW_MAX_TASK_DIALOG = 13;
+    public static final int CALLBACK_SHOW_NO_USB_DIALOG = 10;
+    public static final int CALLBACK_STOP_PLAY_MEDIA = 9;
+    public static final int CLEAR_EPG_LIST_DATA = 2;
+    public static final int CLEAR_LISTVIEW_DATA = 1;
+    public static final int CMD_ADD_DOWN_TASK = 7;
+    public static final int CMD_CHECK_DOWN_TASK = 4;
+    public static final int CMD_INIT_LIST_ADAPTER = 8;
+    public static final int CMD_LOAD_EPG_DATA = 1;
+    public static final int CMD_LOAD_INTERVAL_DATA = 3;
+    public static final int CMD_LOAD_POP_DATA = 9;
+    public static final int CMD_LOAD_VOD_DATA = 2;
+    public static final int FRESH_DATE = 11;
+    public static final int FRESH_PAGE_EPG_LIST_VIEW_DATA = 1;
+    public static final int FRESH_PAGE_PZQB = 6;
+    public static final int FRESH_TIME = 14;
+    public static final int HIDE_PAGE_PZQB = 15;
+    public static final int HIDE_QUALITY = 20;
+    public static final int INIT_DOWN_ICON = 13;
+    public static final int LOAD_EPG_PAGE = 17;
+    public static final int LOAD_VOD_PAGE = 18;
+    public static final int PZQB_HIDE_TIME = 3000;
+    public static final int REFRESH_PLAY = 3;
+    public static final int RESUME_DATE = 5;
+    public static final int SHOW_CHANNEL_TABLE = 4;
+    public static final int SHOW_PAGE_PZQB = 7;
+    public static final int SHOW_RESERVATION_DIALOG = 21;
+}

@@ -11,16 +11,16 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="70dp"
-        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginTop="45dp"
         android:background="@drawable/logo"
         android:scaleType="centerInside" />
 
-    <com.eliving.tv.customview.MarqueeTextView
+    <net.sunniwell.app.linktaro.launcher.view.MarqueeTextView
         android:id="@+id/marquee"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginTop="40dp"
         android:layout_marginRight="30dp"
         android:layout_weight="7"
         android:textSize="30sp" />
@@ -34,13 +34,13 @@
             layout="@layout/bar_info_tips"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10sdp" />
+            android:layout_marginTop="40dp" />
 
         <ImageView
             android:id="@+id/top_line"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginTop="40dp"
             android:background="@drawable/top_line" />
 
         <ImageView
@@ -48,6 +48,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="@dimen/_10sdp" />
+            android:layout_marginTop="45dp" />
     </LinearLayout>
 </LinearLayout>

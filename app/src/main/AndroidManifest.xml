@@ -1,149 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.eliving.tv">
+    package="net.sunniwell.app.linktaro"
+    android:platformBuildVersionCode="24"
+    android:platformBuildVersionName="7"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="23"
+    android:versionName="1.0.23">
 
 
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.SET_TIME_ZONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.WRITE_SETTINGS"
-        tools:ignore="ProtectedPermissions" />
-    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"
-        tools:ignore="ProtectedPermissions" />
-    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES"
-        tools:ignore="ProtectedPermissions" />
-    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"
-        tools:ignore="ProtectedPermissions" />
-    <uses-permission android:name="android.permission.SET_TIME_ZONE"
-        tools:ignore="ProtectedPermissions" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
 
     <application
-        android:name=".App"
-        android:allowBackup="true"
-        android:debuggable="true"
-        android:hardwareAccelerated="false"
-        android:icon="@mipmap/ic_launcher"
+        android:name="net.sunniwell.app.linktaro.SWApplication"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:largeHeap="true"
-        android:networkSecurityConfig="@xml/network_security_config"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:usesCleartextTraffic="true"
-        tools:ignore="HardcodedDebugMode"
-        tools:targetApi="n">
-<!--        <activity-->
-<!--            android:name=".ui.launcher.MainActivity"-->
-<!--            android:screenOrientation="landscape">-->
-            <!--            <intent-filter>-->
-            <!--                <action android:name="android.intent.action.MAIN" />-->
-
-            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
-            <!--            </intent-filter>-->
-<!--        </activity>-->
-
-        <!--<activity
-            android:name=".ui.launcher.nettv.activity.NettvActivity"
-            android:screenOrientation="landscape">
+        android:theme="@style/Theme">
+        <activity android:name=".launcher.activity.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-        </activity>-->
-
-        <activity
-            android:name=".ui.launcher.nettv.activity.LivePlayerActivity"
-            android:screenOrientation="landscape">
-
         </activity>
-
+        <activity android:name=".launcher.activity.Email" />
+        <activity android:name=".launcher.activity.InfoActivity" />
         <activity
-            android:name=".ui.radio.RadioActivity"
-            android:screenOrientation="landscape">
-
-        </activity>
-
-        <activity
-            android:name=".ui.MainActivity"
-            android:screenOrientation="landscape">
+            android:name=".nettv.entry.NettvActivity"
+            android:exported="false">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="net.sunniwell.app.sakura.action.NETTV" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-
-            <!-- This is added to handle a deep link -->
-            <nav-graph android:value="@navigation/navigation" />
         </activity>
 
+        <service
+            android:name="net.sunniwell.sz.mop4.service.WorkService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="net.sunniwell.mopsdk.WORK_SERVICE" />
+            </intent-filter>
+        </service>
+        <provider
+            android:name=".nettv.provider.ParameterContentProvider"
+            android:authorities="pmContentProvider"
+            android:process=":MopService" />
+        <service android:name=".nettv.service.SWUpdateStbDataService" />
+
         <activity
-            android:name=".ui.channels.ChannelsActivity"
-            android:screenOrientation="landscape">
-
-
-         <!--   <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
-
-            <!-- This is added to handle a deep link -->
-<!--
-            <nav-graph android:value="@navigation/navigation" />
--->
+            android:name=".radio.entry.RadioActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="net.sunniwell.app.sakura.action.RADIO" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".launcher.activity.ADActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="net.sunniwell.app.sakura.AD" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
 
+        <receiver android:name=".launcher.receiver.SystemStateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
 
         <activity
-            android:name=".ui.vod.VodActivity"
-            android:screenOrientation="landscape">
-
-
-            <!--   <intent-filter>
-                   <action android:name="android.intent.action.MAIN" />
-
-                   <category android:name="android.intent.category.LAUNCHER" />
-               </intent-filter>-->
-
-            <!-- This is added to handle a deep link -->
-            <!--
-                        <nav-graph android:value="@navigation/navigation" />
-            -->
-        </activity>
-
-        <activity
-            android:name=".ui.ads.ADActivity"
-            android:screenOrientation="landscape"/>
-
-        <activity
-            android:name=".ui.info.ServiceActivity"
-            android:screenOrientation="landscape"/>
-
-        <activity
-            android:name=".ui.config.ConfigActivity"
-            android:screenOrientation="landscape"/>
-
-        <activity
-            android:name=".ui.mail.EmailActivity"
-            android:screenOrientation="landscape"/>
-        <activity
-            android:name=".ui.channels.VodPlayerActivity"
-            android:screenOrientation="landscape"/>
-        <activity
-            android:name=".ui.launcher.nettv.activity.LiveCategoryActivity"
-            android:screenOrientation="landscape">
-
-        </activity>
+            android:name=".launcher.activity.ConfigActivity"
+            android:theme="@style/translucent" />
+        <activity android:name=".nettv.entry.ErrorPageActivity" />
     </application>
-
-
-
 </manifest>

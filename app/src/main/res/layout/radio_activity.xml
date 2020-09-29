@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/radio_radiobg">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1040dp"
+        android:layout_marginTop="79dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/colorIcon1_image"
+            style="@style/AdChannelColorIconTheme"
+            android:background="@drawable/radio_red" />
+
+        <ImageView
+            android:id="@+id/colorIcon2_image"
+            style="@style/AdChannelColorIconTheme"
+            android:background="@drawable/radio_green" />
+
+        <ImageView
+            android:id="@+id/colorIcon3_image"
+            style="@style/AdChannelColorIconTheme"
+            android:background="@drawable/radio_yellow" />
+
+        <ImageView
+            android:id="@+id/colorIcon4_image"
+            style="@style/AdChannelColorIconTheme"
+            android:background="@drawable/radio_blue" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ad_logo_image"
+        android:layout_width="1178dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="114dp"
+        android:focusable="false" />
+
+    <ImageView
+        android:id="@+id/am1"
+        style="@style/image_style"
+        android:layout_marginLeft="462dp"
+        android:layout_marginBottom="164dp"
+        android:focusable="true"
+        android:nextFocusLeft="@+id/am1"
+        android:nextFocusRight="@+id/am1"
+        android:nextFocusUp="@+id/fm6"
+        android:nextFocusDown="@+id/am2"
+        android:onClick="clickAmChannel"
+        android:tag="0" />
+
+    <ImageView
+        android:id="@+id/am2"
+        style="@style/image_style"
+        android:layout_marginLeft="588dp"
+        android:layout_marginBottom="164dp"
+        android:focusable="true"
+        android:nextFocusLeft="@+id/am2"
+        android:nextFocusRight="@+id/am2"
+        android:nextFocusUp="@+id/am1"
+        android:nextFocusDown="@+id/am3"
+        android:onClick="clickAmChannel"
+        android:tag="1" />
+
+    <ImageView
+        android:id="@+id/am3"
+        style="@style/image_style"
+        android:layout_marginLeft="715dp"
+        android:layout_marginBottom="164dp"
+        android:focusable="true"
+        android:nextFocusLeft="@+id/am3"
+        android:nextFocusRight="@+id/am3"
+        android:nextFocusUp="@+id/am2"
+        android:nextFocusDown="@+id/am4"
+        android:onClick="clickAmChannel"
+        android:tag="2" />
+
+    <ImageView
+        android:id="@+id/am4"
+        style="@style/image_style"
+        android:layout_marginLeft="842dp"
+        android:layout_marginBottom="164dp"
+        android:focusable="true"
+        android:nextFocusLeft="@+id/am4"
+        android:nextFocusRight="@+id/am4"
+        android:nextFocusUp="@+id/am3"
+        android:nextFocusDown="@+id/am5"
+        android:onClick="clickAmChannel"
+        android:tag="3" />
+
+    <ImageView
+        android:id="@+id/am5"
+        style="@style/image_style"
+        android:layout_marginLeft="969dp"
+        android:layout_marginBottom="164dp"
+        android:focusable="true"
+        android:nextFocusLeft="@+id/am5"
+        android:nextFocusRight="@+id/am5"
+        android:nextFocusUp="@+id/am4"
+        android:nextFocusDown="@+id/am6"
+        android:onClick="clickAmChannel"
+        android:tag="4" />
+
+    <ImageView
+        android:id="@+id/am6"
+        style="@style/image_style"
+        android:layout_marginLeft="1096dp"
+        android:layout_marginBottom="164dp"
+        android:focusable="true"
+        android:nextFocusLeft="@+id/am6"
+        android:nextFocusRight="@+id/am6"
+        android:nextFocusUp="@+id/am5"
+        android:nextFocusDown="@+id/fm1"
+        android:onClick="clickAmChannel"
+        android:tag="5" />
+
+    <ImageView
+        android:id="@+id/fm6"
+        style="@style/image_style"
+        android:layout_marginLeft="1096dp"
+        android:layout_marginBottom="52dp"
+        android:focusable="true"
+        android:nextFocusLeft="@+id/fm6"
+        android:nextFocusRight="@+id/fm6"
+        android:nextFocusUp="@+id/fm5"
+        android:nextFocusDown="@+id/am1"
+        android:onClick="clickAmChannel"
+        android:tag="11" />
+
+    <ImageView
+        android:id="@+id/fm5"
+        style="@style/image_style"
+        android:layout_marginLeft="969dp"
+        android:layout_marginBottom="52dp"
+        android:focusable="true"
+        android:nextFocusLeft="@+id/fm5"
+        android:nextFocusRight="@+id/fm5"
+        android:nextFocusUp="@+id/fm4"
+        android:nextFocusDown="@+id/fm6"
+        android:onClick="clickAmChannel"
+        android:tag="10" />
+
+    <ImageView
+        android:id="@+id/fm4"
+        style="@style/image_style"
+        android:layout_marginLeft="842dp"
+        android:layout_marginBottom="52dp"
+        android:focusable="true"
+        android:nextFocusLeft="@+id/fm4"
+        android:nextFocusRight="@+id/fm4"
+        android:nextFocusUp="@+id/fm3"
+        android:nextFocusDown="@+id/fm5"
+        android:onClick="clickAmChannel"
+        android:tag="9" />
+
+    <ImageView
+        android:id="@+id/fm3"
+        style="@style/image_style"
+        android:layout_marginLeft="715dp"
+        android:layout_marginBottom="52dp"
+        android:focusable="true"
+        android:nextFocusLeft="@+id/fm3"
+        android:nextFocusRight="@+id/fm3"
+        android:nextFocusUp="@+id/fm2"
+        android:nextFocusDown="@+id/fm4"
+        android:onClick="clickAmChannel"
+        android:tag="8" />
+
+    <ImageView
+        android:id="@+id/fm2"
+        style="@style/image_style"
+        android:layout_marginLeft="588dp"
+        android:layout_marginBottom="52dp"
+        android:focusable="true"
+        android:nextFocusLeft="@+id/fm2"
+        android:nextFocusRight="@+id/fm2"
+        android:nextFocusUp="@+id/fm1"
+        android:nextFocusDown="@+id/fm3"
+        android:onClick="clickAmChannel"
+        android:tag="7" />
+
+    <ImageView
+        android:id="@+id/fm1"
+        style="@style/image_style"
+        android:layout_marginLeft="461dp"
+        android:layout_marginBottom="52dp"
+        android:focusable="true"
+        android:nextFocusLeft="@+id/fm1"
+        android:nextFocusRight="@+id/fm1"
+        android:nextFocusUp="@+id/am6"
+        android:nextFocusDown="@+id/fm2"
+        android:onClick="clickAmChannel"
+        android:tag="6" />
+
+    <ImageView
+        android:id="@+id/channel_image"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_alignLeft="@+id/ad_logo_image"
+        android:layout_alignBottom="@+id/fm1"
+        android:layout_marginLeft="124dp"
+        android:layout_marginBottom="33dp" />
+
+    <ImageView
+        android:id="@+id/ad_fullscreen_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:focusable="false" />
+</RelativeLayout>
